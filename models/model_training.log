@@ -1,0 +1,3 @@
+2024-05-08 19:18:53,187 - INFO - Starting training for SEIC
+2024-05-08 19:18:55,047 - INFO - Model trained for SEIC - MSE: 0.06958216381856461
+2024-05-08 19:18:55,100 - INFO - Training completed for SEIC - MSE: 0.06958216381856461
