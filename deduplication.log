@@ -1,0 +1,2 @@
+2024-02-25 17:28:27,110:ERROR:Error during deduplication: 'Cursor' object has no attribute 'count'
+2024-02-25 17:28:27,111:INFO:Deduplication script completed. Total elapsed time: 0:00:01.824694
