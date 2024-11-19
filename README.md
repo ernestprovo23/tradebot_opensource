@@ -95,7 +95,7 @@ MIT License - See LICENSE file for details
 
 - Open issues on GitHub for bugs
 - Contributions welcome via pull requests
-- No direct trading support provided
+- Trades are LIVE (if not using paper trade endpoints from Alpaca)
 - Users responsible for own implementation
 
 Remember: This is an educational tool that requires significant customization. Success depends entirely on your implementation and risk management.
