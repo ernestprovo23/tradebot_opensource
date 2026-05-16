@@ -1,8 +1,9 @@
 {
-    "max_position_size": 14984.992499999998,
-    "max_portfolio_size": 88910.9555,
-    "max_drawdown": 20,
-    "max_risk_per_trade": 0.11,
-    "max_equity_equity": 39959.98,
-    "max_crypto_equity": 39959.98
+    "_comment": "Placeholder values — replace with your own risk parameters before use.",
+    "max_position_size": "CUSTOMIZE",
+    "max_portfolio_size": "CUSTOMIZE",
+    "max_drawdown": "CUSTOMIZE",
+    "max_risk_per_trade": "CUSTOMIZE",
+    "max_equity_equity": "CUSTOMIZE",
+    "max_crypto_equity": "CUSTOMIZE"
 }

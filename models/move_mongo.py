@@ -11,10 +11,10 @@ logging.basicConfig(filename='data_transfer.log', level=logging.DEBUG,
 load_dotenv()
 MONGO_DB_CONN_STRING = os.getenv('MONGO_DB_CONN_STRING')
 
-# Source MongoDB connection string
+# Source MongoDB connection string — set MONGO_DB_CONN_STRING in .env
 source_uri = MONGO_DB_CONN_STRING
-# Destination MongoDB connection string
-destination_uri = "mongodb+srv://REDACTED@REDACTED/?retryWrites=true&w=majority&appName=dseprod1"
+# Destination MongoDB connection string — set MONGO_DEST_URI in .env (Atlas SRV)
+destination_uri = os.environ["MONGO_DEST_URI"]
 
 # Connect to the source MongoDB
 source_client = MongoClient(source_uri)

@@ -1,0 +1,30 @@
+# Secrets
+.env
+.env.*
+credentials.py
+config.py
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Data / artifacts
+*.csv
+!selected_pairs.csv.example
+data/
+models/trained/

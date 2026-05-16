@@ -1,14 +1,18 @@
+import os
 from pymongo import MongoClient, UpdateOne
 from bson.objectid import ObjectId
 from datetime import datetime
 import pytz
+from dotenv import load_dotenv
 
-# Source MongoDB (On-prem)
-source_uri = "mongodb://REDACTED_INTERNAL_IP:27018/"
+load_dotenv()
+
+# Source MongoDB — set MONGO_SOURCE_URI in .env (e.g., mongodb://<host>:<port>/)
+source_uri = os.environ["MONGO_SOURCE_URI"]
 source_client = MongoClient(source_uri)
 
-# Destination MongoDB (Cloud - Atlas)
-dest_uri = "mongodb+srv://REDACTED@REDACTED/?retryWrites=true&w=majority&appName=dseprod1"
+# Destination MongoDB — set MONGO_DEST_URI in .env (Atlas SRV string)
+dest_uri = os.environ["MONGO_DEST_URI"]
 dest_client = MongoClient(dest_uri)
 
 # Specify the timezone (adjust as needed)
